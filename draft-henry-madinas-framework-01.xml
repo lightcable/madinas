@@ -337,7 +337,7 @@
         <t> This trust relationship naturally depends on the relationship between the user of the personal device 
         and the operator of the service. Thus, it is useful to observe the typical trust structure of common environments:</t>
 
-        <ul>
+        <ol spacing="normal" type="A">
           <li>A. Residential settings under the control of the user: this is typical of a home network with Wi-Fi in the LAN and 
           Internet connection. In this environment, the MAC address activity may be detectable beyond the 
           home walls. However, if traffic is encrypted (e.g. WPA3), some protection for OTA eavesdropping 
@@ -364,7 +364,7 @@
           <li>E. Managed enterprises: in this environment, users are typically provided with corporate devices, 
           and all connected devices are managed, for example through a Mobile Device Management (MDM) profile 
           installed on the device. Full trust is created as the MDM profile is installed.</li>
-        </ul>  
+        </ol>  
 
       </section>
 
