@@ -676,17 +676,17 @@ Internet-Draft                RCM Framework                   March 2021
 
    +==================+========+=========+==========+=================+
    | Network Location | Trust  | Network | Network  | Network Support |
-   |                  | Degree |  Setup  | Services |   Expectation   |
+   |                  | Degree |  Admin  | Services |   Expectation   |
    +==================+========+=========+==========+=================+
    |       Home       |  High  |   User  |  Medium  |       Low       |
    +------------------+--------+---------+----------+-----------------+
-   |  Campus (BYOD)   | Medium |  Expert | Complex  |      Medium     |
+   |  Campus (BYOD)   | Medium |    IT   | Complex  |      Medium     |
    +------------------+--------+---------+----------+-----------------+
-   | Enterprise (MDM) |  High  |  Expert | Complex  |       High      |
+   | Enterprise (MDM) |  High  |    IT   | Complex  |       High      |
    +------------------+--------+---------+----------+-----------------+
-   |   Hospitality    |  Low   |  Expert |  Simple  |      Medium     |
+   |   Hospitality    |  Low   |    IT   |  Simple  |      Medium     |
    +------------------+--------+---------+----------+-----------------+
-   |   Public WiFi    |  Low   |  Expert |  Simple  |       Low       |
+   |   Public WiFi    |  Low   |   ISP   |  Simple  |       Low       |
    +------------------+--------+---------+----------+-----------------+
 
                      Table 1: Scenario Mapping Table
@@ -716,7 +716,7 @@ Internet-Draft                RCM Framework                   March 2021
    address Changes:
 
    PS1  The network must not make any assumption about client MAC
-        address persistence.  >MAC address change must happen while
+        address persistence.  MAC address change must happen while
         allowing for service continuity.  If a service is interrupted
         during the RCM process, there must be a formal mechanism for the
         client and the network to exchange about the interruption.
