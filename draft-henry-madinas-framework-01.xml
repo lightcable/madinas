@@ -338,7 +338,7 @@
         and the operator of the service. Thus, it is useful to observe the typical trust structure of common environments:</t>
 
         <ol spacing="normal" type="A">
-          <li>A. Residential settings under the control of the user: this is typical of a home network with Wi-Fi in the LAN and 
+          <li>Residential settings under the control of the user: this is typical of a home network with Wi-Fi in the LAN and 
           Internet connection. In this environment, the MAC address activity may be detectable beyond the 
           home walls. However, if traffic is encrypted (e.g. WPA3), some protection for OTA eavesdropping 
           can be assumed. The wire segment within the broadcast domain is under the control of the user, 
@@ -346,7 +346,7 @@
 	        this level. The device trusts the access point and all L2 domain entities beyond the access point.  Traffic over the Internet does not expose the MAC address if it is not copied to another 
           field before routing happens.</li>
 
-          <li>B. Managed residential settings: examples of this type of environment include shared living facilities 
+          <li>Managed residential settings: examples of this type of environment include shared living facilities 
           and other collective environments where an operator manages the network for the residents. The OTA 
           exposure is similar to that of a home. A number of devices larger than in a standard home may be 
           present, and the operator may be requested to provide IT support to the residents. Therefore, the 
@@ -354,21 +354,24 @@
           as to understand a past reported issue. For both activities, a device identification associated to the 
           session is needed. Full trust is often established in this environment, at the scale of a series of a few 
           sessions.</li>
-          <li>C. Public guest networks: public hotspots, such as in shopping malls, hotels, stores, trains stations 
+
+          <li>Public guest networks: public hotspots, such as in shopping malls, hotels, stores, trains stations 
           and airports are typical of this environment. The guest network operator may be legally mandated to 
           identify devices or users or may have the option to leave all devices and users untracked. In this 
           environment, trust is commonly not established with any element of the L2 broadcast domain (Zero trust model by default).</li>
-          <li>D. Enterprises (with BYOD): users may be provided corporate devices or 
+          
+          <li>Enterprises (with BYOD): users may be provided corporate devices or 
           may bring their own devices. The devices are not directly under the control of a corporate IT 
           team. Trust may be established as the device joins the network. Some enterprise models will mandate full trust, others, considering the BYOD nature of the device, will allow selective trust.</li>
-          <li>E. Managed enterprises: in this environment, users are typically provided with corporate devices, 
+          
+          <li>Managed enterprises: in this environment, users are typically provided with corporate devices, 
           and all connected devices are managed, for example through a Mobile Device Management (MDM) profile 
           installed on the device. Full trust is created as the MDM profile is installed.</li>
         </ol>  
 
       </section>
 
-    <section numbered="true" toc="default">
+    <section anchor="dev_id" numbered="true" toc="default">
       <name>The Purpose of Device Identification and Associated Problems</name>
       <t>Many network functional devices offering a service to a personal 
         device use the device MAC address to maintain service continuity.</t>
@@ -437,11 +440,11 @@
       <section numbered="true" toc="default">
         <name>Scenario Mapping Table</name>
         
-        <t>Section 3.4 discusses different environments, different settings, and the expectations of 
-        users and network operators. Table 1 summarizes the expected degree of trust, privacy and 
-        network support</t>
+        <t><xref target="dev_id" /> discusses different environments, different settings, and the expectations of 
+        users and network operators. <xref target="scenario_table" /> summarizes the expected degree of trust, network
+        adim responsbilitly, complexity of supported network services and network support expectation from the user</t>
         
-        <table anchor="table_example" align="center">
+        <table anchor="scenario_table" align="center">
           <name>Scenario Mapping Table</name>
           <thead>
             <tr>
@@ -503,6 +506,8 @@
         <t>On the other end of the spectrum, Public WiFi is often considered to be
         untrusted. Privacy is the number one concern for the user. Most users connect to Public WiFi only require
         simple Internet connectivity service, and expect only limited to no technical support.</t>
+
+        <t>Not surprising, <xref target="scenario_table" /> shows that users have different each environment </t>
 
     </section>
 
