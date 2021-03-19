@@ -495,19 +495,26 @@
   </table>
 
 
-        <t>For example: a Home network is considered to be trusted and safe. Users expect a simple procedure to connect
-        to their home networks. Once onboard, devices in the home network should be easy to access services (e.g., play
-        music from a mobile device to a wireless speaker over WiFi). Privacy within the Layer 2 domain is not a major concern.
+        <t>Not surprising, <xref target="scenario_table" /> shows that users have different experience and expectations
+        for each environment. For exaxmple: Home network is considered to be trusted and safe. The home user expects 
+        simple procedures to setup and connect devices
+        to the home networks. Once onboard, devices in the home network should be able to communicate (e.g., play
+        music from a mobile device to a wireless speaker over WiFi) without further action. In other words, the device
+        should be able to use the network continuously with minimal overhead. Privacy within the Layer 2 domain in the 
+        home network is not a major concern. 
         The Home network can also include many IoT devices, which need to be simple to onboard and manage. The home user 
-        commonly expects the network operator to protect the home network from external threats (attacks from the Internet).
-		    The home user also commonly expects simple policy features (e.g., Parental Control). 
-		    Most home users do not expect to need networking skills to manage their home network.</t>
+        usually expects the network operator to protect the home network from external threats (attacks from the Internet).
+		    The home user also usually expects simple policy features (e.g., Parental Control). Sometimes, the home user may
+        want to onboard certain devices temporarily (e.g., guest network). The setup is similar to Hospitality network but
+        not as heavily adminstrated as Hospitality network. Most home users do not have deep networking skill to manage 
+        the network.</t>
 
         <t>On the other end of the spectrum, Public WiFi is often considered to be
         untrusted. Privacy is the number one concern for the user. Most users connect to Public WiFi only require
         simple Internet connectivity service, and expect only limited to no technical support.</t>
-
-        <t>Not surprising, <xref target="scenario_table" /> shows that users have different each environment </t>
+        
+        <t>There are legitimate reasons for the network to identify devices in order to provide serivces. Likewise,
+        the user may want to authenticate the network before giving an identity. </t>
 
     </section>
 
@@ -521,14 +528,21 @@
           MAC address change must happen while allowing for service continuity. If a service 
           is interrupted during the RCM process, there must be a formal mechanism for the client 
           and the network to exchange about the interruption.</li>
+          <li>During duration of the services, the device shoud not change the identity. Any change of
+          identity may result re-authentication and interrupt of the current network services.</li>
+          <li>Survey the current standards that use MAC address as a device identifier in the 
+          protocol. Make recommendation to the working groups to remove the dependency</li>
+          <li>Work as liaison with external standard bodies such as IEEE, BBF and WBA to align with use cases and
+          requirements.</li>
           <li>Define a secure mechanism to authenticate and exchange network identity to the 
-          device</li>
+          device.</li>
           <li>Define a secure mechanism to inform the device about the type of network 
           the device is connecting to (e.g. public Wi-Fi, enterprise, home), allowing the user 
           to select the device identity (or identities) accordingly.</li>
           <li>Define a secure mechanism for the network to request device identity. Upon successful 
           authenticatoin, the network may provide the device a temporary network-based marker to use 
           the network services.</li>
+          <li>Define a secure mechanism for the device to notify the network prior to update the MAC address.</li>
         </ol>
 
       </section>

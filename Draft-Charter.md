@@ -7,8 +7,8 @@
 
 ##### For scenarios where session continuity is desirable, the group will recommend improvements to protect the exchange of identifiers between the client and the service source. For scenarios where privacy is paramount, the group will recommend best practices to ensure that the privacy achieved with RCM rotation is not damaged by the unprotected communication of other stable identifiers.
 
-* Assess, define and publish the impacts of current use caess in various environments after introducing Randomized and Changing MAC address.
+##### Assess, define and publish the impacts of current use caess in various environments after introducing Randomized and Changing MAC address.
 
-* Research existing mechanisms and analyze the needs to define a new consent-based mechanism to securely exchange identity between networks and user devices.
+##### Research existing mechanisms and analyze the needs to define a new consent-based mechanism to securely exchange identity between networks and user devices.
 
-* Define the MADINAS problem statements.
+##### Publish the MADINAS problem statements.
