@@ -15,7 +15,7 @@
 <rfc
       xmlns:xi="http://www.w3.org/2001/XInclude"
       category="info"
-      docName="draft-henry-madinas-use-cases-02"
+      docName="draft-henry-madinas-framework-02"
       ipr="trust200902"
       obsoletes=""
       updates=""
@@ -519,7 +519,7 @@
 
 <t>There are legitimate reasons for the network to identify devices in order to provide serivces. Likewise,
         the user may want to authenticate the network before giving an identity. </t>
-        
+
   </section>
 
 
@@ -528,20 +528,30 @@
         <t>The section describes the requirements for Randomized MAC-Address Changes: </t>
 
         <ol spacing="normal" type="REQ%d">
-		      <li>he network must not make any assumption about client MAC address persistence.  MAC address change must happen while allowing for service continuity.  If a service is interrupted during the RCM process, there must be a formal mechanism for the client and the network to exchange about the interruption.</li>
-	      	<li>During duration of the services, the device shoud not change the identity.  Any change of identity may result re-authentication and interrupt of the current network services.</li>
+		      <li>The network must not make any assumption about client MAC address persistence.  
+          MAC address change must happen while allowing for service continuity.  If a service 
+          is interrupted during the RCM process, there must be a formal mechanism for the 
+          client and the network to exchange about the interruption.</li>
 
-	      	<li>Survey the current standards that use MAC address as a device identifier in the protocol.  Make recommendation to the working groups to remove the dependency.</li>
+	      	<li>During duration of the services, the device shoud not change the identity.  
+          Any change of identity may result re-authentication and interrupt of the current network services.</li>
 
-	      	<li>Work as liaison with external standard bodies such as IEEE, BBF and WBA to align with use cases and requirements.</li>
+	      	<li>Survey the current standards that use MAC address as a device identifier in the protocol.  Make 
+          recommendation to the working groups to remove the dependency.</li>
 
-          <li> Identify a secure mechanism to authenticate and exchange network identity to the device. </li>
+	      	<li>Work as liaison with external standard bodies such as IEEE, BBF and WBA to align with use cases and 
+          requirements.</li>
 
-          <li>Identify a secure mechanism to inform the device about the type of network the device is connecting to (e.g. public Wi-Fi, enterprise, home), allowing the user to select the device identity (or identities) accordingly.</li>
+          <li>Identify a secure mechanism to authenticate and exchange network identity to the device. </li>
 
-          <li> Identify a secure mechanism for the network to request device identity.  Upon successful authenticatoin, the network may provide the device a temporary network-based marker to use the network services.</li>
+          <li>Identify a secure mechanism to inform the device about the type of network the device is connecting
+          to (e.g. public Wi-Fi, enterprise, home), allowing the user to select the device identity (or identities) 
+          accordingly.</li>
 
-          <li>Identify a secure mechanism for the device to notify the network prior to update the MAC address.</li>
+          <li>Identify a secure mechanism for the network to request device identity.  Upon successful authenticatoin, 
+          the network may provide the device a temporary network-based marker to use the network services.</li>
+
+          <li>Identify a secure mechanism for the device to notify the network prior to updating the MAC address.</li>
         </ol>
 
       </section>

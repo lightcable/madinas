@@ -10,7 +10,7 @@ Expires: 4 November 2021                                         Comcast
 
 
              Randomized and Changing MAC Address Use Cases
-                    draft-henry-madinas-use-cases-02
+                    draft-henry-madinas-framework-02
 
 Abstract
 
@@ -708,7 +708,7 @@ Internet-Draft                RCM Use Cases                     May 2021
    The section describes the requirements for Randomized MAC-Address
    Changes:
 
-   REQ1  he network must not make any assumption about client MAC
+   REQ1  The network must not make any assumption about client MAC
          address persistence.  MAC address change must happen while
          allowing for service continuity.  If a service is interrupted
          during the RCM process, there must be a formal mechanism for
@@ -747,7 +747,7 @@ Internet-Draft                RCM Use Cases                     May 2021
          network services.
 
    REQ8  Identify a secure mechanism for the device to notify the
-         network prior to update the MAC address.
+         network prior to updating the MAC address.
 
 4.  IANA Considerations
 
