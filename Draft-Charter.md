@@ -3,7 +3,7 @@
 
 ##### Device identity is important in scenarios where the network needs to know the device or user identity in order to offer, operate and maintain certain services. Currently, many use cases and applications make an implicit assumption about the unique association between the device identity and its MAC address. This assumption is being used in both control plane and data plane functions and protocols. RCM breaks this assumption. This requires updating applications to function across MAC address changes.
 
-##### The MADINAS Working Group will document the current RCM state of the affairs and examine network and application use cases that would be impacted by RCM. The group will also evaluate existing solutions that may provide identifiers (i.e., beyond the MAC address) in various scenarios where application and network can use them instead of MAC address. 
+##### The MADINAS Working Group will document the current RCM state of the affairs and examine network and application use cases that would be impacted by RCM. The group will also evaluate existing solutions (e.g, IETF RFC and other exsiting standards) that may provide identifiers (i.e., beyond the MAC address) in various scenarios where application and network can use them instead of MAC address. 
 
 ##### The Working Group will work together with other IETF WGs (e.g., DHC, IntArea), and will liaise with other relevant SDOs such as IEEE 802 and the Wireless Broadband Alliance (WBA). The Working Group will coordinate on the different recommendations, as well as potential follow-up activities within or outside the IETF.
 
