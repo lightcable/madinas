@@ -3,9 +3,7 @@
 
 ##### Device identity is important in scenarios where the network needs to know the device or user identity in order to offer, operate and maintain certain services. Currently, many use cases and applications make an implicit assumption about the unique association between the device identity and its MAC address. This assumption is being used in both control plane and data plane functions and protocols. RCM breaks this assumption. This requires updating applications to function across MAC address changes.
 
-##### The MADINAS Working Group will examine the effect of RCM schemes on network and application services in several scenarios identified as relevant. The group will also evaluate various identifiers (i.e., beyond the MAC address) that can be used by the network to provide services, as well as scenarios where personal device identity is not required.
-
-##### For scenarios where personal device identity stability is desirable, the Working Group will recommend protocols that can be used to protect the request and exchange of identifiers between the client and the service provider. For scenarios where privacy is paramount, the group will recommend best practices to ensure that the privacy achieved with RCM is not compromised by the communication of other identifiers. The MADINAS Working Group will examine other IETF work that may be applicable.
+##### The MADINAS Working Group will document the current RCM state of the affairs and examine network and application use cases that would be impacted by RCM. The group will also evaluate existing solutions that may provide identifiers (i.e., beyond the MAC address) in various scenarios where application and network can use them instead of MAC address. 
 
 ##### The Working Group will work together with other IETF WGs (e.g., DHC, IntArea), and will liaise with other relevant SDOs such as IEEE 802 and the Wireless Broadband Alliance (WBA). The Working Group will coordinate on the different recommendations, as well as potential follow-up activities within or outside the IETF.
 
@@ -14,8 +12,8 @@
 
 ##### Expected deliverables/milestones:
 ##### 1. An Informational Problem Statement document, including use cases analysis and requirements. 
-    ###### - An Informational Use Cases and Requirements document (e.g. draft-henry-madinas-framework)
-    ###### - An Informational MAC Address Randomization current state-of-affairs document (e.g. draft-zuniga-mac-address-randomization)
+     - An Informational Use Cases and Requirements document (e.g. draft-henry-madinas-framework)
+     - An Informational MAC Address Randomization current state-of-affairs document (e.g. draft-zuniga-mac-address-randomization)
 
 ##### 2. Document Best Practices handling RCM
     - A Best Common Practices document
