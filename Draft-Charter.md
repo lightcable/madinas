@@ -17,7 +17,7 @@
     - An Informational Use Cases and Requirements document (e.g. draft-henry-madinas-framework)
     - An Informational MAC Address Randomization current state-of-affairs document (e.g. draft-zuniga-mac-address-randomization)
 
-2. Document Best Practices handling RCM
+##### 2. Document Best Practices handling RCM
     - A Best Common Practices document
 
 
